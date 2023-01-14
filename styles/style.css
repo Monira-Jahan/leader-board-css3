@@ -25,6 +25,56 @@
     border:1px solid #D1D1D1;
     margin-bottom: 27px;
  }
+
+ /* header */
+ .header{
+    width:100%;
+    height:94px;
+    background: #562EFF;
+    display:flex;
+ }
+ 
+ .header .logo{
+    width:40px;
+    height:51px;
+    padding-top:26px;
+    padding-bottom: 17px;
+    padding-left: 370px;
+    padding-right: 20px; 
+ }
+ .nav-title{
+    color:#FFFFFF;
+    font-size: 24px;
+    padding-top:10px;
+    padding-bottom: 40px;
+ }
+ 
+nav ul{
+    display:flex;
+    align-items: center;
+    font-weight: 400;
+    font-size:20px;
+    color:black;
+    text-decoration: none;
+    margin-left:400px;
+    margin-top: 30px;
+}
+nav li{
+    list-style:none;
+    margin-left:40px;
+}
+nav li a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size:16px;
+}
+header .profile{
+    width: 51px;
+    height: 51px;
+    margin-top: 23px;
+    margin-left:36px;
+}
+
 /* top players */
 .top-players{
     margin-bottom: 30px;
@@ -94,6 +144,14 @@
     display:grid;
     grid-template-columns: repeat(3,1fr);
     grid-column-gap: 24px;
+    /* background:blue; */
+   
+}
+.course-banner{
+    box-shadow: 0px 6px 50px rgba(0, 0, 0, 0.06);
+    border-radius: 5px;
+    padding:13px 17px 16px 15px;
+    background: #FFFFFF;;
 }
 .course .course-banner img{
     width:224 px;
@@ -133,6 +191,9 @@
 /* media queries */
 
     @media screen and (max-width:688px) {
+        nav ul{
+            flex-direction: column;
+        }
         .container{
             width:100%;
         }
